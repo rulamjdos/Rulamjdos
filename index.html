@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle and the Rainbow Valley - Interactive Storybook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="storybook-container">
+        <!-- Cover Page -->
+        <section id="cover" class="page active">
+            <div class="cover-content">
+                <div class="cover-decorations">
+                    <div class="sparkle sparkle-1">✨</div>
+                    <div class="sparkle sparkle-2">⭐</div>
+                    <div class="sparkle sparkle-3">✨</div>
+                    <div class="sparkle sparkle-4">⭐</div>
+                </div>
+                <h1 class="book-title">Sparkle and the Rainbow Valley</h1>
+                <h2 class="book-subtitle">A Tale of Friendship and Sharing</h2>
+                <div class="cover-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222743/gpt4o_images/etbqtgxq2ugsbw6s8p7e.png" alt="Sparkle the Triceratops with rainbow spots and golden crest in his magical valley">
+                </div>
+                <button class="btn btn--primary btn--lg start-reading-btn" onclick="startReading()">
+                    🌈 Start Reading 🌈
+                </button>
+                <div class="author-info">
+                    <p>by AI Storyteller • Illustrated by AI Artist</p>
+                    <p class="target-age">Perfect for ages 3-6</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Pages -->
+        <section id="page1" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Meet Sparkle the Triceratops</h2>
+                <div class="page-number">Page 1 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222743/gpt4o_images/etbqtgxq2ugsbw6s8p7e.png" alt="Sparkle the Triceratops with rainbow spots and golden crest in his magical valley">
+                </div>
+                <div class="story-text">
+                    <p>In a magical valley where rainbows touch the ground,<br>
+                    Lived Sparkle the Triceratops, the kindest friend around.<br>
+                    With shimmering rainbow spots that twinkled in the sun,<br>
+                    And a glowing golden crest that sparkled when he'd run!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(1)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page2" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Sparkle's Special Friends</h2>
+                <div class="page-number">Page 2 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222798/gpt4o_images/zil1yefsn81mueojqpdh.png" alt="The four dinosaur friends: Sparkle, Swoosh, Bubbles, and Ziggy together">
+                </div>
+                <div class="story-text">
+                    <p>Sparkle had three friends who made his days so bright,<br>
+                    There was Swoosh the Pteranodon with feathers green and white.<br>
+                    Bubbles the Brontosaurus with polka dots of blue,<br>
+                    And Ziggy the Stegosaurus with plates of every hue!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(2)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(2)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page3" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">The Problem in Paradise</h2>
+                <div class="page-number">Page 3 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222856/gpt4o_images/h367dgndzehleg4brsiy.png" alt="Sparkle discovering the colors are fading from his beautiful valley">
+                </div>
+                <div class="story-text">
+                    <p>One morning Sparkle woke to find the sky looked gray,<br>
+                    The rainbow bridge was fading and the colors drained away!<br>
+                    'Oh no!' cried little Sparkle, 'What has happened here?<br>
+                    Our beautiful bright valley is losing all its cheer!'</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(3)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(3)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page4" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Friends Come Together</h2>
+                <div class="page-number">Page 4 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222900/gpt4o_images/ttnqlezxtbjkzjtmb0fm.png" alt="The dinosaur friends supporting each other with a group hug">
+                </div>
+                <div class="story-text">
+                    <p>His friends came running quickly when they heard his worried call,<br>
+                    'Don't worry, friend,' said Swoosh, 'we'll figure this out, all!<br>
+                    We're stronger when together, that's what friendship means,<br>
+                    Let's search for what has stolen all our pretty, bright scenes!'</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(4)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(4)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page5" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">The Quest Begins</h2>
+                <div class="page-number">Page 5 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750222958/gpt4o_images/yjvbwrvokzvvzyx9msbs.png" alt="Bubbles the Brontosaurus spotting the mysterious cave with her friends">
+                </div>
+                <div class="story-text">
+                    <p>They searched behind the tall trees and under every stone,<br>
+                    But nowhere could they find what made their colors gone.<br>
+                    Then Bubbles had an idea with her neck stretched up high,<br>
+                    'Look there!' she pointed upward to a cave up in the sky!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(5)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(5)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page6" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">The Color-Eating Cloud</h2>
+                <div class="page-number">Page 6 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750223010/gpt4o_images/qdyweppfokyfwd5rwud2.png" alt="The lonely cloud who captured all the colors, feeling sad and sorry">
+                </div>
+                <div class="story-text">
+                    <p>Inside the cave they found a sad and lonely cloud,<br>
+                    Who'd gobbled up their colors 'cause he felt left out.<br>
+                    'I'm sorry,' said the cloud with tears upon his face,<br>
+                    'I just wanted to be colorful and bright in this place!'</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(6)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(6)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page7" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Understanding and Kindness</h2>
+                <div class="page-number">Page 7 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750223073/gpt4o_images/fr9vdhsd4gm41e3did4w.png" alt="Sparkle showing kindness and understanding to the lonely cloud">
+                </div>
+                <div class="story-text">
+                    <p>Sweet Sparkle's heart grew warm, his crest began to glow,<br>
+                    'Dear cloud, you don't need colors for your friendship to show!<br>
+                    But if you'd like some colors, we can share what we've got,<br>
+                    Friendship isn't about looks, but the kindness in your heart!'</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(7)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(7)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page8" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Sharing Makes Everyone Happy</h2>
+                <div class="page-number">Page 8 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750223140/gpt4o_images/qum6lycsyzuarfhrd8gg.png" alt="All four friends generously sharing their colors with the cloud">
+                </div>
+                <div class="story-text">
+                    <p>Each friend shared their colors with the cloud so gray,<br>
+                    Swoosh gave green and white to brighten up his day.<br>
+                    Bubbles shared her blue dots, Ziggy gave his rainbow plates,<br>
+                    And Sparkle shared his golden glow - friendship never waits!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(8)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(8)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page9" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">The Valley Blooms Again</h2>
+                <div class="page-number">Page 9 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750223197/gpt4o_images/fagpvdwxpyrbgj6t9sdh.png" alt="The beautiful valley restored with all five friends celebrating together">
+                </div>
+                <div class="story-text">
+                    <p>The grateful cloud returned the colors to their home,<br>
+                    The valley bloomed with beauty, no more need to roam!<br>
+                    Rainbows filled the sky again, flowers danced with glee,<br>
+                    And now they had a new friend - five friends there would be!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(9)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary" onclick="nextPage(9)">Next Page 🦕</button>
+            </div>
+        </section>
+
+        <section id="page10" class="page story-page">
+            <div class="page-header">
+                <h2 class="page-title">Friendship Is the Greatest Magic</h2>
+                <div class="page-number">Page 10 of 10</div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750223246/gpt4o_images/fqszvmoqocjsp8dg7eos.png" alt="The magical finale with all five friends playing together in friendship">
+                </div>
+                <div class="story-text">
+                    <p>From that day on they played together, five friends so true,<br>
+                    Sparkle learned that sharing makes your happiness grow too!<br>
+                    When you share your special gifts and show a heart that's kind,<br>
+                    The most magical friendships are the ones that you will find!</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn--secondary" onclick="previousPage(10)">🦕 Previous Page</button>
+                <button class="btn btn--secondary" onclick="goToCover()">🏠 Back to Cover</button>
+                <button class="btn btn--primary celebration-btn" onclick="celebrate()">🎉 The End! 🎉</button>
+            </div>
+        </section>
+
+        <!-- Celebration Modal -->
+        <div id="celebration-modal" class="modal">
+            <div class="modal-content">
+                <h2>🎉 Hooray! You finished the story! 🎉</h2>
+                <p>What a wonderful adventure with Sparkle and friends!</p>
+                <div class="celebration-sparkles">
+                    <span class="celebration-sparkle">✨</span>
+                    <span class="celebration-sparkle">🌈</span>
+                    <span class="celebration-sparkle">⭐</span>
+                    <span class="celebration-sparkle">🦕</span>
+                    <span class="celebration-sparkle">💖</span>
+                </div>
+                <button class="btn btn--primary" onclick="closeCelebration()">Read Again! 📚</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
